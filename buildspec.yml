@@ -8,9 +8,9 @@ build:
 commands:
 - echo Building the Go code...
 - go build avg.go
-artifacts:
 secondary-artifacts:
 golang_artifacts:
 base-directory: newdemo.git
-files:
+artifacts:
+ files:
 - avg

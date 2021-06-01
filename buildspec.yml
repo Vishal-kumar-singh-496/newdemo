@@ -1,14 +1,16 @@
 version: 0.2
-phases: 
-install: 
-runtime-versions: 
-golang: 1.14
-build: 
-commands:
-  - echo Building the Go code...
-  - go build avg.go
-artifacts: 
-secondary-artifacts: 
-golang_artifacts: 
-base-directory: newdemo.git
-files: '-avg'
+
+phases:
+  install:
+    runtime-versions:
+      golang: 1.14
+  build:
+    commands:
+      - echo Building the Go code...
+      - go build avg.go 
+artifacts:
+  secondary-artifacts:
+    golang_artifacts:
+      base-directory: newdemo
+      files:
+        - avg

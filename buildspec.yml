@@ -1,0 +1,14 @@
+version: 0.2phases:
+install:
+runtime-versions:
+golang: 1.14
+build:
+commands:
+- echo Building the Go code...
+- go build avg.go
+artifacts:
+secondary-artifacts:
+golang_artifacts:
+base-directory: golang-app
+files:
+-avg

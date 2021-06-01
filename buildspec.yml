@@ -9,6 +9,6 @@ commands:
 artifacts:
 secondary-artifacts:
 golang_artifacts:
-base-directory: golang-app
+base-directory: newdemo.git
 files:
 -avg

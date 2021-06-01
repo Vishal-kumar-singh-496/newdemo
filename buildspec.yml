@@ -13,4 +13,4 @@ golang_artifacts:
 base-directory: newdemo.git
 artifacts:
  files:
-- avg
+  - avg
